@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="code.js" async></script>
+    <title>Checkout Page</title>
+  </head>
+
+  <body>
+    <h1>Checkout</h1>
+    <br>
+    <br>
+  
+  <div id="container">
+
+    <br>
+    <br>
+
+    <div id="contact">
+
+      <fieldset>  <h2>Contact information</h2>
+        <form class="llena">
+          <p>Email</p> 
+          <div class="icin">
+            <i class="fas fa-envelope"></i>
+            <input class="if" type="email" placeholder="Enter your email..." required>
+          </div>
+
+          <p>Phone</p>
+          <div class="icin">
+            <i class="fas fa-phone-alt"></i>
+            <input class="if" type="number" placeholder="Enter your phone..."  required>
+          </div>
+          <br>
+          <h2>Shipping address</h2>
+          
+          <p>Full name</p> 
+          <div class="icin">
+            <i class="fas fa-user-circle"></i>
+            <input class="if" type="text" placeholder="Your name..." required>
+          </div>
+
+          <p>Address</p>
+          <div class="icin">
+            <i class="fas fa-home"></i>
+            <input class="if" type="text" placeholder="Your address..."  required>
+          </div>
+           
+          <p>City</p>
+          <div class="icin">
+            <i class="fas fa-city"></i>
+            <input class="if" type="text" placeholder="Your city..."  required>
+          </div>
+
+
+          <div class="byTwo">
+
+            <div class="one">
+              <p>Country</p>
+              <div class="icin">
+                <i class="fas fa-globe-americas"></i>
+                <select class="if" required>
+                  <option value="" disabled selected>Your country...</option>
+                  <option value="1">USA</option>
+                  <option value="2">Chile</option>
+                  <option value="3">Mexico</option>
+
+
+                </select>
+              </div>
+            </div>
+
+            <div class="one">
+              <p>Postal code</p>
+              <div class="icin">
+                <i class="fas fa-suitcase"></i>
+                <input class="if" type="number" placeholder="Your postal code..."  required>
+              </div>
+              
+            </div>
+
+
+  
+
+
+          </div>
+
+
+
+
+          <label id="check">
+            <input type="checkbox">
+            <span class="check"></span>
+            Save this information for next time
+          </label>
+          <br>
+
+          <input class="btn" type="submit" value="Continue" onclick="selected()" >
+
+        </form>
+      </fieldset>
+    </div>
+
+    <div id="a2">
+
+      <div class="item">
+
+        <div class="pic">
+          <img src="photo1.png">
+            <div class="desc">
+              <h2>Vintage Backbag</h2>
+              <div>
+                <p class="price">$54.99</p>
+              </div>
+              <span>$94.99</span>    
+            </div>
+  
+          <div class="nmbr">
+            <button class="more" type="button">+</button>
+            <p class="i1">1</p>
+            <button class="less" type="button">-</button>
+          </div>
+        </div>
+
+      </div>
+  
+      <div class="item">
+
+        <div class="pic">
+          <img src="photo2.png">
+            <div class="desc">
+              <h2>Levi Shoes</h2>
+              <div>
+                <p class="price">$74.99</p>
+              </div>
+              <span>$124.99</span>    
+            </div>
+  
+          <div class="nmbr">
+            <button  class="more" type="button">+</button>
+            <p class="i1">1</p>
+            <button  class="less" type="button">-</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ship">
+        <h2 class="t1">Shipping</h2>
+        <h2 class="t1">$19</h2>
+      </div>
+
+      <div class="ship">
+        <h2 class="t1">Total</h2>
+        <h2 id="result">$ 167.98</h2>
+      </div>
+
+    </div>
+
+    
+
+
+
+
+  
+
+  </div>
+  </body>
+</html>
